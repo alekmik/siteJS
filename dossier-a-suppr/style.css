@@ -1,0 +1,45 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 2%;
+}
+
+.title-padding {
+    padding-right: 75%;
+}
+
+section .product img {
+    max-width: 50%;
+    height: auto;
+}
+  
+/* Styles par défaut pour les produits */
+section .product {
+    flex: 1 0 33%; /* Chaque élément occupe 50% de la largeur de la section */
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+
+/* Modifier les styles à partir d'une échelle spécifique (par exemple, 768 pixels) */
+@media (max-width: 850px) {
+    section .product {
+        flex: 1 0 50%; /* Chaque élément occupe 50% de la largeur de la section */
+        padding: 10px;
+        box-sizing: border-box;
+    }
+  }
+  
+section {
+    flex: 1;
+}
+
+
+/*  Panier  */
+#injectJs{
+    flex: 1 75%; /* Chaque élément occupe 50% de la largeur de la section */
+    padding: 10px;
+    box-sizing: border-box;
+    padding-left: 10%;
+}
